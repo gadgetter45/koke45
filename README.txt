@@ -179,16 +179,16 @@
         <p>こんにちは、群馬在住のYoutuber兼ガジェッター、kokeです。IPhoneの脱獄やandroid端末のwindows化などを楽しく投稿しています。</p>
         <div class="skills">
           <div class="skill">
-            <span>HTML/CSS</span>
+            <span>HTML/金欠率</span>
             <div class="bar"><div style="width: 95%;"></div></div>
           </div>
           <div class="skill">
-            <span>JavaScript</span>
-            <div class="bar"><div style="width: 90%;"></div></div>
+            <span>ガジェ知識</span>
+            <div class="bar"><div style="width: 50%;"></div></div>
           </div>
-          <div class="skill">
+          <div class="浮上率">
             <span>React</span>
-            <div class="bar"><div style="width: 85%;"></div></div>
+            <div class="bar"><div style="width: 5%;"></div></div>
           </div>
         </div>
       </div>
