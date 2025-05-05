@@ -201,17 +201,17 @@
       <div class="card">
         <h3>IPhone5は2025年にどこまで使えるか？</h3>
         <p>ios10,A6チップの限界に挑みます。</p>
-        <a href="#">→ 記事を読む</a>
+        
       </div>
       <div class="card">
         <h3>IPhone4の分解と修復</h3>
         <p>リンゴループ化したIPhone4を復活させます。</p>
-        <a href="#">→ 記事を読む</a>
+      
       </div>
       <div class="card">
         <h3>購入したIPhoneをレビュー‼</h3>
         <p>メルカリにて破格で購入したIPhone三台をレビューします</p>
-        <a href="#">→ 記事を読む</a>
+       
       </div>
     </div>
   </section>
@@ -226,9 +226,8 @@
 <footer>
   <p>© 2025 koke</p>
   <div class="social">
-    <a href="#">🐦</a>
-    <a href="#">💼</a>
-    <a href="#">📷</a>
+    <a href="#">Twitter</a>
+ 
   </div>
 </footer>
 
