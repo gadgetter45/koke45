@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>山田太郎 | Webクリエイターのポートフォリオ</title>
+  <title>koke | Gadgetter </title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -165,8 +165,8 @@
 <body>
 
 <header>
-  <h1>山田太郎</h1>
-  <p>フロントエンド開発とデザインの交差点に生きるWebクリエイター</p>
+  <h1>koke</h1>
+  <p>群馬県在住のガジェッター</p>
 </header>
 
 <div class="container">
@@ -176,7 +176,7 @@
     <div class="about">
       <img src="https://via.placeholder.com/250" alt="プロフィール画像">
       <div>
-        <p>こんにちは、東京在住のWebクリエイター、山田太郎です。React・Vueなどのフロントエンド技術を軸に、使いやすく美しいUI/UX設計を得意としています。趣味は写真とガジェットレビュー。気になったことはすぐコードに落とすタイプです。</p>
+        <p>こんにちは、群馬在住のYoutuber兼ガジェッター、kokeです。IPhoneの脱獄やandroid端末のwindows化などを楽しく投稿しています。</p>
         <div class="skills">
           <div class="skill">
             <span>HTML/CSS</span>
@@ -199,37 +199,32 @@
     <h2>最新のブログ</h2>
     <div class="blog-cards">
       <div class="card">
-        <h3>React vs Vue 徹底比較2025</h3>
-        <p>どちらがプロジェクトに向いてる？学習コスト・パフォーマンス・将来性から分析しました。</p>
+        <h3>IPhone5は2025年にどこまで使えるか？</h3>
+        <p>ios10,A6チップの限界に挑みます。</p>
         <a href="#">→ 記事を読む</a>
       </div>
       <div class="card">
-        <h3>【保存版】ポートフォリオに入れるべき6項目</h3>
-        <p>採用担当者が「見たい！」と感じる情報とは？経験者目線でまとめました。</p>
+        <h3>IPhone4の分解と修復</h3>
+        <p>リンゴループ化したIPhone4を復活させます。</p>
         <a href="#">→ 記事を読む</a>
       </div>
       <div class="card">
-        <h3>フリーランス1年目のリアル収支と学び</h3>
-        <p>勢いで独立した1年目のリアルな体験談。収入・支出・心構えを赤裸々公開。</p>
+        <h3>購入したIPhoneをレビュー‼</h3>
+        <p>メルカリにて破格で購入したIPhone三台をレビューします</p>
         <a href="#">→ 記事を読む</a>
       </div>
     </div>
   </section>
 
   <section class="contact">
-    <h2>お問い合わせ</h2>
-    <form>
-      <input type="text" placeholder="お名前" required>
-      <input type="email" placeholder="メールアドレス" required>
-      <textarea rows="5" placeholder="お問い合わせ内容" required></textarea>
-      <button type="submit">送信</button>
-    </form>
+    <h2>このサイトはβ版です。</h2>
+   
   </section>
 
 </div>
 
 <footer>
-  <p>© 2025 山田太郎</p>
+  <p>© 2025 koke</p>
   <div class="social">
     <a href="#">🐦</a>
     <a href="#">💼</a>
