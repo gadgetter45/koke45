@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
+<html lang="ja"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="群馬在住のガジェッターkokeの公式サイト。iPhone脱獄、Androidカスタマイズ、最新ガジェットレビューを配信。YouTubeやブログで最新情報をチェック！">
   <meta name="keywords" content="ガジェット, iPhone, Android, 脱獄, koke, 群馬, YouTuber, テックレビュー">
   <meta name="author" content="koke">
-  <meta property="og:title" content="koke | 群馬のガジェッター & YouTuber">
+  <meta property="og:title" content="koke | 群馬のガジェッター &amp; YouTuber">
   <meta property="og:description" content="群馬在住のガジェッターkokeの公式サイト。iPhone脱獄、Androidカスタマイズ、最新ガジェットレビューを配信。">
   <meta property="og:image" content="https://pbs.twimg.com/profile_images/1905204578142060544/Uy9o3amd_400x400.jpg">
   <meta property="og:url" content="https://koke-gadgetter.com">
   <meta name="twitter:card" content="summary_large_image">
-  <title>koke | 群馬のガジェッター & YouTuber</title>
+  <title>koke | 群馬のガジェッター &amp; YouTuber</title>
   <link rel="icon" href="https://via.placeholder.com/32" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
@@ -630,7 +628,7 @@
 </head>
 <body data-theme="light" data-lang="ja" data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
   <!-- Custom Cursor -->
-  <div class="cursor"></div>
+  <div class="cursor" style="left: 811px; top: 472px;"></div>
 
   <!-- Theme Toggle -->
   <button class="theme-toggle" aria-label="テーマを切り替え">
@@ -652,20 +650,20 @@
       <div class="nav-links">
         <a href="#home">ホーム</a>
         <a href="#about">自己紹介</a>
-        <a href="#portfolio">ポートフォリオ</a>
+        
         <a href="#blog">ブログ</a>
-        <a href="#contact">お問い合わせ</a>
+        
       </div>
     </div>
   </nav>
 
   <!-- Header -->
   <header id="home" role="banner">
-    <div id="particles-js"></div>
+    <div id="particles-js"><canvas class="particles-js-canvas-el" width="1596" height="1486" style="width: 100%; height: 100%;"></canvas></div>
     <div class="hero-content">
-      <h1 data-aos="fade-down">koke</h1>
-      <p data-aos="fade-up">群馬のガジェッター & YouTuber</p>
-      <a href="https://youtube.com/@koke" class="cta" data-aos="fade-up" data-aos-delay="200">YouTubeをチェック</a>
+      <h1 data-aos="fade-down" class="aos-init aos-animate">koke</h1>
+      <p data-aos="fade-up" class="aos-init aos-animate">群馬のガジェッター</p>
+      <a href="x.com/gadgetter45" class="cta aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">Twitterをチェック</a>
     </div>
   </header>
 
@@ -673,23 +671,23 @@
   <div class="container">
     <!-- About -->
     <section id="about" role="region" aria-labelledby="about-heading">
-      <h2 id="about-heading" data-aos="fade-right">自己紹介</h2>
-      <div class="about" data-aos="fade-up">
+      <h2 id="about-heading" data-aos="fade-right" class="aos-init aos-animate">自己紹介</h2>
+      <div class="about aos-init aos-animate" data-aos="fade-up">
         <img src="https://pbs.twimg.com/profile_images/1905204578142060544/Uy9o3amd_400x400.jpg" alt="kokeのプロフィール写真" loading="lazy">
         <div>
-          <p>こんにちは、群馬在住のYouTuber兼ガジェッター、kokeです！iPhoneの脱獄、Androidのカスタマイズ、最新ガジェットのレビューを通じて、テクノロジーの楽しさを発信しています。趣味はレトロゲーム収集とドローン撮影。群馬の自然を活かしたコンテンツもお届けします！</p>
+          <p>こんにちは、群馬在住のYouTuber兼ガジェッター、kokeです！iPhoneの脱獄、Androidのカスタマイズ、最新ガジェットのレビューを通じて、テクノロジーの楽しさを発信しています。</p>
           <div class="skills">
             <div class="skill">
               <span>ガジェット知識</span>
-              <div class="bar" data-width="95%"><div class="skill-bar"></div></div>
+              <div class="bar" data-width="95%"><div class="skill-bar" style="width: 95%;"></div></div>
             </div>
             <div class="skill">
               <span>動画編集</span>
-              <div class="bar" data-width="85%"><div class="skill-bar"></div></div>
+              <div class="bar" data-width="45%"><div class="skill-bar" style="width: 45%;"></div></div>
             </div>
             <div class="skill">
               <span>コミュニティ運営</span>
-              <div class="bar" data-width="80%"><div class="skill-bar"></div></div>
+              <div class="bar" data-width="80%"><div class="skill-bar" style="width: 80%;"></div></div>
             </div>
           </div>
         </div>
@@ -698,30 +696,30 @@
 
     <!-- Portfolio -->
     <section id="portfolio" role="region" aria-labelledby="portfolio-heading">
-      <h2 id="portfolio-heading" data-aos="fade-right">ポートフォリオ</h2>
+      <h2 id="portfolio-heading" data-aos="fade-right" class="aos-init aos-animate">最新</h2>
       <div class="portfolio-grid">
-        <div class="portfolio-item" data-aos="fade-up">
-          <img src="https://via.placeholder.com/400x250?text=AndroidWindows" alt="Android Windows化" loading="lazy">
+        <div class="portfolio-item aos-init aos-animate" data-aos="fade-up">
+          
           <div class="portfolio-content">
-            <h3>AndroidタブレットのWindows化</h3>
-            <p>古いAndroidタブレットをWindows風UIにカスタマイズ。フルチュートリアル公開！</p>
-            <a href="/portfolio/android-windows" class="read-more">詳細を見る</a>
+            <h3>Surface 着弾‼</h3>
+            <p>三万円でメルカリにて買ったsurfaceをレビューしていきます。</p>
+            <a href="https://gadgetter45.blogspot.com/2025/05/koke-blog-test.html" class="read-more">詳細を見る</a>
           </div>
         </div>
-        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
-          <img src="https://via.placeholder.com/400x250?text=iPhoneJailbreak" alt="iPhone脱獄" loading="lazy">
+        <div class="portfolio-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://guide-images.cdn.ifixit.com/igi/sX5iMoIvYMbCvHoF.medium" alt="iPhone脱獄" loading="lazy">
           <div class="portfolio-content">
             <h3>iPhone 5s脱獄ガイド</h3>
             <p>iOS 12での脱獄手順をステップごとに解説。安全性とカスタマイズを両立！</p>
-            <a href="/portfolio/iphone-jailbreak" class="read-more">詳細を見る</a>
+            <a href="https://gadgetter45.blogspot.com/2025/05/koke-blog-test.html" class="read-more">詳細を見る</a>
           </div>
         </div>
-        <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
-          <img src="https://via.placeholder.com/400x250?text=DroneVideo" alt="ドローン動画" loading="lazy">
+        <div class="portfolio-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://everymac.com/images/other_images/iphone-4-5-big.jpg" alt="いおおおいお" loading="lazy">
           <div class="portfolio-content">
-            <h3>群馬の絶景ドローン動画</h3>
-            <p>群馬の自然をドローンで撮影。4Kクオリティで地域の魅力を発信！</p>
-            <a href="/portfolio/drone-video" class="read-more">詳細を見る</a>
+            <h3>IPhone各種レビュー</h3>
+            <p>10年前のIPhoneは2025年に使えるのか！</p>
+            <a href="https://gadgetter45.blogspot.com/2025/05/koke-blog-test.html" class="read-more">詳細を見る</a>
           </div>
         </div>
       </div>
@@ -729,68 +727,29 @@
 
     <!-- Blog -->
     <section id="blog" role="region" aria-labelledby="blog-heading">
-      <h2 id="blog-heading" data-aos="fade-right">最新のブログ</h2>
-      <div class="blog-search" data-aos="fade-up">
-        <input type="text" id="blog-search-input" placeholder="ブログを検索...">
-        <button type="button" onclick="searchBlogs()">検索</button>
-      </div>
-      <div class="blog-cards">
-        <div class="card" data-aos="fade-up" data-tags="iPhone,ガジェット">
-          <img src="https://via.placeholder.com/400x250?text=iPhone5" alt="iPhone5の画像" loading="lazy">
-          <div class="card-content">
-            <div class="meta">2025年5月10日 | ガジェット</div>
-            <h3>iPhone5は2025年にどこまで使えるか？</h3>
-            <p>iOS10とA6チップの限界に挑みます。古いデバイスを現代で活用する方法を検証！</p>
-            <a href="/blog/iphone5" class="read-more">詳細を読む</a>
-          </div>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="100" data-tags="iPhone,修理">
-          <img src="https://via.placeholder.com/400x250?text=iPhone4" alt="iPhone4の画像" loading="lazy">
-          <div class="card-content">
-            <div class="meta">2025年5月5日 | 修理</div>
-            <h3>iPhone4の分解と修復</h3>
-            <p>リンゴループ化したiPhone4を復活！分解から修復までの全工程を解説。</p>
-            <a href="/blog/iphone4" class="read-more">詳細を読む</a>
-          </div>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="200" data-tags="iPhone,レビュー">
-          <img src="https://via.placeholder.com/400x250?text=iPhoneReview" alt="iPhoneレビューの画像" loading="lazy">
-          <div class="card-content">
-            <div class="meta">2025年4月30日 | レビュー</div>
-            <h3>メルカリで購入したiPhoneをレビュー</h3>
-            <p>破格で手に入れたiPhoneの実力は？開封から使用感まで徹底レビュー！</p>
-            <a href="/blog/iphone-review" class="read-more">詳細を読む</a>
-          </div>
-        </div>
-      </div>
+      
+      
+      
     </section>
 
     <!-- Contact -->
     <section id="contact" class="contact" role="region" aria-labelledby="contact-heading">
-      <h2 id="contact-heading" data-aos="fade-right">お問い合わせ</h2>
-      <form id="contact-form" data-aos="fade-up">
-        <input type="text" name="name" placeholder="お名前" required>
-        <input type="email" name="email" placeholder="メールアドレス" required>
-        <textarea name="message" placeholder="メッセージ" rows="6" required></textarea>
-        <button type="submit" id="contact-submit">送信</button>
-      </form>
+      
+      
     </section>
   </div>
 
   <!-- Footer -->
   <footer role="contentinfo">
     <div class="newsletter">
-      <h3>ニュースレターに登録</h3>
-      <form id="newsletter-form">
-        <input type="email" name="email" placeholder="メールアドレスを入力" required>
-        <button type="submit">登録</button>
-      </form>
+      <h3>このサイトはβ版です</h3>
+      
     </div>
     <div class="social">
-      <a href="https://twitter.com/koke" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-      <a href="https://instagram.com/koke" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://facebook.com/koke" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-      <a href="https://youtube.com/@koke" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://twitter.com/gadgetter45" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      
+      
+      <a href="https://www.youtube.com/@Koke_Gadget" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
     </div>
     <p>© 2025 koke. All Rights Reserved.</p>
   </footer>
@@ -799,8 +758,8 @@
   <a href="#" class="back-to-top" aria-label="ページのトップに戻る"><i class="fas fa-chevron-up"></i></a>
 
   <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer=""></script>
   <script type="module">
     // Import Firebase modules
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
@@ -995,5 +954,5 @@
       }
     });
   </script>
-</body>
-</html>
+
+</body></html>
