@@ -79,6 +79,78 @@
       opacity: 0.4;
     }
 
+    /* Navigation Bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--primary);
+      color: #fff;
+      padding: 15px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1400px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      font-size: 1.1em;
+      padding: 10px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 1.8em;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: var(--primary);
+        padding: 20px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+
     /* Header */
     header {
       position: relative;
@@ -347,36 +419,6 @@
       transform: translateY(-3px);
     }
 
-    /* Testimonials */
-    .testimonials {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    .testimonial {
-      background: var(--card-bg-light);
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      text-align: center;
-      transition: transform 0.3s;
-    }
-
-    .testimonial:hover {
-      transform: translateY(-10px);
-    }
-
-    .testimonial p {
-      font-style: italic;
-      margin-bottom: 15px;
-    }
-
-    .testimonial cite {
-      font-weight: bold;
-      color: var(--accent);
-    }
-
     /* Contact */
     .contact form {
       display: grid;
@@ -600,27 +642,42 @@
     <i class="fas fa-globe"></i>
   </button>
 
+  <!-- Navigation Bar -->
+  <nav role="navigation">
+    <div class="nav-container">
+      <div class="nav-logo">koke</div>
+      <button class="hamburger" aria-label="メニューを開く">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="#home">ホーム</a>
+        <a href="#about">自己紹介</a>
+        <a href="#portfolio">ポートフォリオ</a>
+        <a href="#blog">ブログ</a>
+        <a href="#contact">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Header -->
-  <header role="banner">
+  <header id="home" role="banner">
     <div id="particles-js"></div>
     <div class="hero-content">
       <h1 data-aos="fade-down">koke</h1>
       <p data-aos="fade-up">群馬のガジェッター & YouTuber</p>
       <a href="https://youtube.com/@koke" class="cta" data-aos="fade-up" data-aos-delay="200">YouTubeをチェック</a>
-      <p data-aos="fade-up" data-aos-delay="400" id="subscriber-count">YouTube登録者数: 読み込み中...</p>
     </div>
   </header>
 
   <!-- Main Content -->
   <div class="container">
     <!-- About -->
-    <section role="region" aria-labelledby="about-heading">
+    <section id="about" role="region" aria-labelledby="about-heading">
       <h2 id="about-heading" data-aos="fade-right">自己紹介</h2>
       <div class="about" data-aos="fade-up">
         <img src="https://pbs.twimg.com/profile_images/1905204578142060544/Uy9o3amd_400x400.jpg" alt="kokeのプロフィール写真" loading="lazy">
         <div>
-          <p>こんにちは、群馬在住のYouTuber兼ガジェッター、kokeです！iPhoneの脱獄、AndroidのWindows化、最新ガジェットのレビューを通じて、テクノロジーの限界に挑戦しています。YouTubeで10万人以上の登録者を誇り、ガジェット愛好家のコミュニティを築いています。趣味はレトロゲーム収集とドローン撮影。群馬の自然を活かした動画も配信中！</p>
-          <p>これまでに、iPhone 4の完全修復やAndroidタブレットの自作OS開発など、ユニークなプロジェクトを成功させてきました。あなたのガジェットライフをより楽しくするヒントを提供します！</p>
+          <p>こんにちは、群馬在住のYouTuber兼ガジェッター、kokeです！iPhoneの脱獄、Androidのカスタマイズ、最新ガジェットのレビューを通じて、テクノロジーの楽しさを発信しています。趣味はレトロゲーム収集とドローン撮影。群馬の自然を活かしたコンテンツもお届けします！</p>
           <div class="skills">
             <div class="skill">
               <span>ガジェット知識</span>
@@ -640,7 +697,7 @@
     </section>
 
     <!-- Portfolio -->
-    <section role="region" aria-labelledby="portfolio-heading">
+    <section id="portfolio" role="region" aria-labelledby="portfolio-heading">
       <h2 id="portfolio-heading" data-aos="fade-right">ポートフォリオ</h2>
       <div class="portfolio-grid">
         <div class="portfolio-item" data-aos="fade-up">
@@ -671,7 +728,7 @@
     </section>
 
     <!-- Blog -->
-    <section role="region" aria-labelledby="blog-heading">
+    <section id="blog" role="region" aria-labelledby="blog-heading">
       <h2 id="blog-heading" data-aos="fade-right">最新のブログ</h2>
       <div class="blog-search" data-aos="fade-up">
         <input type="text" id="blog-search-input" placeholder="ブログを検索...">
@@ -708,27 +765,8 @@
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section role="region" aria-labelledby="testimonials-heading">
-      <h2 id="testimonials-heading" data-aos="fade-right">視聴者の声</h2>
-      <div class="testimonials">
-        <div class="testimonial" data-aos="fade-up">
-          <p>"kokeの脱獄チュートリアルのおかげで、旧iPhoneが復活！初心者でもわかりやすい！"</p>
-          <cite>田中さん, ガジェットファン</cite>
-        </div>
-        <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
-          <p>"群馬のドローン動画が美しすぎる。kokeの動画はいつもワクワクする！"</p>
-          <cite>佐藤さん, YouTube視聴者</cite>
-        </div>
-        <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
-          <p>"Androidカスタマイズのアイデアが斬新。kokeのブログは必読！"</p>
-          <cite>山本さん, テック愛好家</cite>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact -->
-    <section class="contact" role="region" aria-labelledby="contact-heading">
+    <section id="contact" class="contact" role="region" aria-labelledby="contact-heading">
       <h2 id="contact-heading" data-aos="fade-right">お問い合わせ</h2>
       <form id="contact-form" data-aos="fade-up">
         <input type="text" name="name" placeholder="お名前" required>
@@ -816,6 +854,13 @@
       el.addEventListener("mouseleave", () => cursor.classList.remove("hovered"));
     });
 
+    // Navigation Toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
     // Dark Mode Toggle
     const themeToggle = document.querySelector(".theme-toggle");
     const body = document.body;
@@ -838,7 +883,6 @@
         about: "自己紹介",
         portfolio: "ポートフォリオ",
         blog: "最新のブログ",
-        testimonials: "視聴者の声",
         contact: "お問い合わせ",
         cta: "YouTubeをチェック",
         newsletter: "ニュースレターに登録"
@@ -848,7 +892,6 @@
         about: "About Me",
         portfolio: "Portfolio",
         blog: "Latest Blog",
-        testimonials: "Viewer Testimonials",
         contact: "Contact",
         cta: "Check YouTube",
         newsletter: "Subscribe to Newsletter"
@@ -862,7 +905,6 @@
       document.querySelector("#about-heading").textContent = translations[lang].about;
       document.querySelector("#portfolio-heading").textContent = translations[lang].portfolio;
       document.querySelector("#blog-heading").textContent = translations[lang].blog;
-      document.querySelector("#testimonials-heading").textContent = translations[lang].testimonials;
       document.querySelector("#contact-heading").textContent = translations[lang].contact;
       document.querySelector("header .cta").textContent = translations[lang].cta;
       document.querySelector("footer .newsletter h3").textContent = translations[lang].newsletter;
@@ -893,19 +935,6 @@
     window.addEventListener("scroll", () => {
       backToTop.classList.toggle("visible", window.scrollY > 300);
     });
-
-    // YouTube Subscriber Count (Replace with your API key and channel ID)
-    async function fetchSubscriberCount() {
-      try {
-        const response = await fetch("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=YOUR_CHANNEL_ID&key=YOUR_API_KEY");
-        const data = await response.json();
-        const count = data.items[0].statistics.subscriberCount;
-        document.getElementById("subscriber-count").textContent = `YouTube登録者数: ${Number(count).toLocaleString()}人`;
-      } catch (error) {
-        document.getElementById("subscriber-count").textContent = "YouTube登録者数: 取得できませんでした";
-      }
-    }
-    fetchSubscriberCount();
 
     // Blog Search
     function searchBlogs() {
