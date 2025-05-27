@@ -1,37 +1,35 @@
-<html lang="ja"><head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="群馬在住のガジェッターkokeの公式サイト。iPhone脱獄、Androidカスタマイズ、最新ガジェットレビューを配信。YouTubeやブログで最新情報をチェック！">
+  <meta name="description" content="群馬のガジェッターkokeの公式サイト。iPhone脱獄、Androidカスタマイズ、最新ガジェットレビューを配信！">
   <meta name="keywords" content="ガジェット, iPhone, Android, 脱獄, koke, 群馬, YouTuber, テックレビュー">
   <meta name="author" content="koke">
-  <meta property="og:title" content="koke | 群馬のガジェッター &amp; YouTuber">
-  <meta property="og:description" content="群馬在住のガジェッターkokeの公式サイト。iPhone脱獄、Androidカスタマイズ、最新ガジェットレビューを配信。">
+  <meta property="og:title" content="koke | ガジェッター">
+  <meta property="og:description" content="最新ガジェットレビューをYouTubeとブログで！">
   <meta property="og:image" content="https://pbs.twimg.com/profile_images/1905204578142060544/Uy9o3amd_400x400.jpg">
   <meta property="og:url" content="https://koke-gadgetter.com">
   <meta name="twitter:card" content="summary_large_image">
-  <title>koke | 群馬のガジェッター &amp; YouTuber</title>
+  <title>koke | ガジェッター</title>
   <link rel="icon" href="https://via.placeholder.com/32" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     :root {
-      --primary: #1e3a8a;
-      --secondary: #7c3aed;
-      --accent: #22d3ee;
-      --bg-light: #f8fafc;
-      --bg-dark: #1f2937;
-      --text-light: #1f2937;
-      --text-dark: #e5e7eb;
-      --card-bg-light: #ffffff;
-      --card-bg-dark: #374151;
-      --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      --bg: #fafafa;
+      --text: #1f2937;
+      --primary: #2563eb;
+      --accent: #14b8a6;
+      --card-bg: #ffffff;
+      --border: #e5e7eb;
     }
 
     [data-theme="dark"] {
-      --bg-light: var(--bg-dark);
-      --text-light: var(--text-dark);
-      --card-bg-light: var(--card-bg-dark);
+      --bg: #1f2937;
+      --text: #f3f4f6;
+      --card-bg: #374151;
+      --border: #4b5563;
     }
 
     * {
@@ -42,89 +40,64 @@
     }
 
     body {
-      font-family: 'Noto Sans JP', sans-serif;
-      background: var(--bg-light);
-      color: var(--text-light);
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
-      overflow-x: hidden;
-      transition: background 0.3s, color 0.3s;
-      cursor: none;
+      transition: background 0.2s, color 0.2s;
     }
 
     a {
       color: var(--accent);
       text-decoration: none;
-      transition: color 0.3s;
+      transition: color 0.2s;
     }
 
-    /* Custom Cursor */
-    .cursor {
-      position: fixed;
-      width: 20px;
-      height: 20px;
-      border: 2px solid var(--accent);
-      border-radius: 50%;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      transition: all 0.1s ease;
-      z-index: 9999;
-    }
-
-    .cursor.hovered {
-      width: 30px;
-      height: 30px;
-      background: var(--accent);
-      opacity: 0.4;
-    }
-
-    /* Navigation Bar */
+    /* Navigation */
     nav {
+      background: var(--card-bg);
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       position: sticky;
       top: 0;
-      background: var(--primary);
-      color: #fff;
-      padding: 15px 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       z-index: 1000;
     }
 
     .nav-container {
-      max-width: 1400px;
+      max-width: 1280px;
       margin: auto;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
 
     .nav-logo {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.8em;
-      font-weight: bold;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
     }
 
     .nav-links {
       display: flex;
-      gap: 20px;
+      gap: 1.5rem;
     }
 
     .nav-links a {
-      color: #fff;
-      font-size: 1.1em;
-      padding: 10px;
-      transition: color 0.3s, transform 0.3s;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
     }
 
     .nav-links a:hover {
       color: var(--accent);
-      transform: translateY(-2px);
     }
 
     .hamburger {
       display: none;
-      font-size: 1.8em;
+      font-size: 1.5rem;
       background: none;
       border: none;
-      color: #fff;
+      color: var(--text);
       cursor: pointer;
     }
 
@@ -136,8 +109,9 @@
         top: 60px;
         left: 0;
         width: 100%;
-        background: var(--primary);
-        padding: 20px;
+        background: var(--card-bg);
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       }
 
       .nav-links.active {
@@ -151,496 +125,228 @@
 
     /* Header */
     header {
-      position: relative;
-      height: 100vh;
-      background: var(--gradient);
+      background: var(--primary);
       color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      overflow: hidden;
-      animation: gradientShift 10s ease infinite;
-    }
-
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    #particles-js {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 0;
-    }
-
-    header .hero-content {
-      z-index: 1;
+      padding: 4rem 1rem;
     }
 
     header h1 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 5em;
-      margin-bottom: 10px;
-      animation: fadeInDown 1s ease;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: 1.8em;
+      font-size: 1.1rem;
       opacity: 0.9;
-      margin-bottom: 20px;
-      animation: fadeInUp 1s ease 0.3s both;
+      margin-bottom: 1.5rem;
     }
 
-    header .cta {
+    .cta {
       display: inline-block;
-      padding: 15px 40px;
+      padding: 0.8rem 2rem;
       background: var(--accent);
       color: #fff;
-      font-size: 1.3em;
-      border-radius: 50px;
-      box-shadow: 0 4px 15px rgba(34, 211, 238, 0.4);
-      transition: transform 0.3s, box-shadow 0.3s;
-      animation: fadeInUp 1s ease 0.6s both;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.2s;
     }
 
-    header .cta:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(34, 211, 238, 0.6);
+    .cta:hover {
+      background: #0d9488;
+      transform: translateY(-2px);
     }
 
     /* Container */
     .container {
-      max-width: 1400px;
+      max-width: 1280px;
       margin: auto;
-      padding: 80px 20px;
-    }
-
-    section {
-      margin-bottom: 100px;
+      padding: 2rem 1rem;
     }
 
     h2 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 3em;
-      margin-bottom: 40px;
-      border-left: 10px solid var(--accent);
-      padding-left: 20px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--primary);
     }
 
     /* About */
     .about {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 50px;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      display: flex;
+      gap: 1.5rem;
       align-items: center;
-      background: var(--card-bg-light);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      transition: background 0.3s, transform 0.3s;
-    }
-
-    .about:hover {
-      transform: translateY(-10px);
     }
 
     .about img {
-      width: 300px;
-      height: 300px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      transition: transform 0.3s;
     }
 
-    .about img:hover {
-      transform: scale(1.1);
+    .about p {
+      font-size: 1rem;
     }
 
-    .skills {
-      margin-top: 30px;
-      display: grid;
-      gap: 20px;
-    }
-
-    .skill {
-      margin-bottom: 20px;
-    }
-
-    .skill span {
-      font-weight: bold;
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    .bar {
-      background: #e5e7eb;
-      height: 15px;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .bar div {
-      height: 100%;
-      background: var(--accent);
-      width: 0;
-      transition: width 1.5s ease;
-    }
-
-    /* Portfolio */
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 30px;
-    }
-
-    .portfolio-item {
-      background: var(--card-bg-light);
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
-      perspective: 1000px;
-    }
-
-    .portfolio-item:hover {
-      transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-    }
-
-    .portfolio-item img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
-
-    .portfolio-content {
-      padding: 20px;
-    }
-
-    .portfolio-content h3 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.8em;
-      margin-bottom: 10px;
-    }
-
-    /* Blog */
-    .blog-search {
-      margin-bottom: 30px;
-      max-width: 500px;
+    /* Gadget Search */
+    .gadget-search {
       display: flex;
-      gap: 10px;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      max-width: 400px;
     }
 
-    .blog-search input {
+    .gadget-search input {
       flex: 1;
-      padding: 12px;
-      border: 2px solid #ccc;
+      padding: 0.8rem;
+      border: 1px solid var(--border);
       border-radius: 8px;
-      font-size: 1em;
+      font-size: 1rem;
     }
 
-    .blog-search button {
-      padding: 12px 20px;
+    .gadget-search button {
+      padding: 0.8rem 1.5rem;
       background: var(--accent);
       color: #fff;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      transition: background 0.3s;
     }
 
-    .blog-search button:hover {
-      background: var(--primary);
+    .gadget-search button:hover {
+      background: #0d9488;
     }
 
-    .blog-cards {
+    /* Gadget Grid */
+    .gadget-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
     }
 
-    .card {
-      background: var(--card-bg-light);
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    .gadget-card {
+      background: var(--card-bg);
+      border-radius: 8px;
       overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
+      transition: transform 0.2s;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    .gadget-card:hover {
+      transform: translateY(-4px);
     }
 
-    .card img {
+    .gadget-card img {
       width: 100%;
-      height: 250px;
+      height: 180px;
       object-fit: cover;
     }
 
-    .card-content {
-      padding: 25px;
+    .gadget-content {
+      padding: 1rem;
     }
 
-    .card h3 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.8em;
-      margin-bottom: 12px;
+    .gadget-content h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
 
-    .card .meta {
-      color: #6b7280;
-      font-size: 0.95em;
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      margin-bottom: 20px;
-    }
-
-    .card .read-more {
-      display: inline-block;
-      padding: 12px 25px;
-      background: var(--accent);
-      color: #fff;
-      border-radius: 25px;
-      transition: background 0.3s, transform 0.3s;
-    }
-
-    .card .read-more:hover {
-      background: var(--primary);
-      transform: translateY(-3px);
-    }
-
-    /* Contact */
-    .contact form {
+    /* Links */
+    .links-grid {
       display: grid;
-      gap: 20px;
-      max-width: 700px;
-      margin: auto;
-      background: var(--card-bg-light);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      transition: background 0.3s;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
     }
 
-    .contact input,
-    .contact textarea {
-      padding: 15px;
-      border: 2px solid #ccc;
+    .link-card {
+      background: var(--card-bg);
+      padding: 1rem;
       border-radius: 8px;
-      font-size: 1em;
-      transition: border-color 0.3s;
-    }
-
-    .contact input:focus,
-    .contact textarea:focus {
-      border-color: var(--accent);
-      outline: none;
-    }
-
-    .contact button {
-      padding: 15px;
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.2em;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.3s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .contact button:hover {
-      background: var(--primary);
-      transform: translateY(-3px);
-    }
-
-    .contact button:disabled {
-      background: #6b7280;
-      cursor: not-allowed;
-    }
-
-    /* Footer */
-    footer {
-      background: var(--primary);
-      color: #fff;
-      padding: 60px 20px;
       text-align: center;
     }
 
-    footer .social a {
-      margin: 0 20px;
-      font-size: 2em;
-      color: #fff;
-      transition: color 0.3s, transform 0.3s;
+    .link-card a {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary);
     }
 
-    footer .social a:hover {
-      color: var(--accent);
-      transform: scale(1.3);
+    /* Spotify */
+    .spotify-widget {
+      max-width: 400px;
+      margin: 1.5rem auto;
     }
 
-    footer .newsletter {
-      margin: 30px 0;
+    /* News */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
     }
 
-    footer .newsletter input {
-      padding: 12px;
-      border: none;
-      border-radius: 5px 0 0 5px;
-      width: 250px;
+    .news-card {
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
     }
 
-    footer .newsletter button {
-      padding: 12px 25px;
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      border-radius: 0 5px 5px 0;
-      cursor: pointer;
-      transition: background 0.3s;
+    .news-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
     }
 
-    footer .newsletter button:hover {
-      background: var(--secondary);
-    }
-
-    /* Language Toggle */
-    .language-toggle {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      background: none;
-      border: none;
-      font-size: 1.5em;
-      color: var(--text-light);
-      cursor: pointer;
-      z-index: 1000;
-    }
-
-    /* Back to Top */
-    .back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: var(--accent);
-      color: #fff;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.8em;
-      opacity: 0;
-      transition: opacity 0.3s, transform 0.3s;
-      cursor: pointer;
-    }
-
-    .back-to-top.visible {
-      opacity: 1;
-    }
-
-    .back-to-top:hover {
-      transform: translateY(-5px);
-    }
-
-    /* Dark Mode Toggle */
+    /* Theme Toggle */
     .theme-toggle {
       position: fixed;
-      top: 20px;
-      right: 20px;
+      top: 1rem;
+      right: 1rem;
       background: none;
       border: none;
-      font-size: 1.5em;
-      color: var(--text-light);
+      font-size: 1.5rem;
+      color: var(--text);
       cursor: pointer;
-      z-index: 1000;
-    }
-
-    /* Animations */
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     /* Responsive */
     @media (max-width: 768px) {
       header h1 {
-        font-size: 3em;
+        font-size: 2rem;
       }
 
       header p {
-        font-size: 1.4em;
+        font-size: 1rem;
       }
 
       .about {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         text-align: center;
       }
 
       .about img {
         margin: auto;
       }
-
-      h2 {
-        font-size: 2.2em;
-      }
-
-      .card img,
-      .portfolio-item img {
-        height: 200px;
-      }
     }
 
     @media (max-width: 480px) {
-      header h1 {
-        font-size: 2.2em;
-      }
-
-      header .cta {
-        padding: 12px 30px;
-        font-size: 1.1em;
-      }
-
-      .container {
-        padding: 40px 15px;
-      }
-
-      .blog-search input {
-        font-size: 0.9em;
+      .cta {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
       }
     }
   </style>
 </head>
-<body data-theme="light" data-lang="ja" data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
-  <!-- Custom Cursor -->
-  <div class="cursor" style="left: 811px; top: 472px;"></div>
-
+<body data-theme="light">
   <!-- Theme Toggle -->
-  <button class="theme-toggle" aria-label="テーマを切り替え">
+  <button class="theme-toggle" aria-label="テーマ切り替え">
     <i class="fas fa-moon"></i>
   </button>
 
-  <!-- Language Toggle -->
-  <button class="language-toggle" aria-label="言語を切り替え">
-    <i class="fas fa-globe"></i>
-  </button>
-
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav role="navigation">
     <div class="nav-container">
       <div class="nav-logo">koke</div>
@@ -650,169 +356,98 @@
       <div class="nav-links">
         <a href="#home">ホーム</a>
         <a href="#about">自己紹介</a>
-        
-        <a href="#blog">ブログ</a>
-        
+        <a href="#gadgets">ガジェット</a>
+        <a href="#links">リンク</a>
       </div>
     </div>
   </nav>
 
   <!-- Header -->
   <header id="home" role="banner">
-    <div id="particles-js"><canvas class="particles-js-canvas-el" width="1596" height="1486" style="width: 100%; height: 100%;"></canvas></div>
-    <div class="hero-content">
-      <h1 data-aos="fade-down" class="aos-init aos-animate">koke</h1>
-      <p data-aos="fade-up" class="aos-init aos-animate">群馬のガジェッター</p>
-      <a href="x.com/gadgetter45" class="cta aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">再読み込み</a>
-    </div>
+    <h1>koke</h1>
+    <p>群馬のガジェッター | ガジェットレビューとカスタマイズ</p>
+    <a href="https://x.com/gadgetter45" class="cta">Twitterでフォロー</a>
   </header>
 
   <!-- Main Content -->
   <div class="container">
     <!-- About -->
     <section id="about" role="region" aria-labelledby="about-heading">
-      <h2 id="about-heading" data-aos="fade-right" class="aos-init aos-animate">自己紹介</h2>
-      <div class="about aos-init aos-animate" data-aos="fade-up">
+      <h2 id="about-heading">自己紹介</h2>
+      <div class="about">
         <img src="https://pbs.twimg.com/profile_images/1905204578142060544/Uy9o3amd_400x400.jpg" alt="kokeのプロフィール写真" loading="lazy">
-        <div>
-          <p>こんにちは、群馬在住のYouTuber兼ガジェッター、kokeです！iPhoneの脱獄、Androidのカスタマイズ、最新ガジェットのレビューを通じて、テクノロジーの楽しさを発信しています。</p>
-          <div class="skills">
-            <div class="skill">
-              <span>ガジェット知識</span>
-              <div class="bar" data-width="95%"><div class="skill-bar" style="width: 95%;"></div></div>
-            </div>
-            <div class="skill">
-              <span>動画編集</span>
-              <div class="bar" data-width="45%"><div class="skill-bar" style="width: 45%;"></div></div>
-            </div>
-            <div class="skill">
-              <span>コミュニティ運営</span>
-              <div class="bar" data-width="80%"><div class="skill-bar" style="width: 80%;"></div></div>
-            </div>
-          </div>
-        </div>
+        <p>群馬在住のkokeです。iPhone脱獄、Androidカスタマイズ、最新ガジェットのレビューをYouTubeとブログで発信しています！</p>
       </div>
     </section>
 
-    <!-- Portfolio -->
-    <section id="portfolio" role="region" aria-labelledby="portfolio-heading">
-      <h2 id="portfolio-heading" data-aos="fade-right" class="aos-init aos-animate">最新</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item aos-init aos-animate" data-aos="fade-up">
-          
-          <div class="portfolio-content">
-            <h3>Surface 着弾‼</h3>
-            <p>三万円でメルカリにて買ったsurfaceをレビューしていきます。</p>
-            <a href="https://gadgetter45.blogspot.com/2025/05/koke-blog-test.html" class="read-more">詳細を見る</a>
+    <!-- Gadgets -->
+    <section id="gadgets" role="region" aria-labelledby="gadgets-heading">
+      <h2 id="gadgets-heading">ガジェットレビュー</h2>
+      <div class="gadget-search">
+        <input type="text" id="gadget-search-input" placeholder="ガジェットを検索..." aria-label="ガジェット検索">
+        <button onclick="searchGadgets()">検索</button>
+      </div>
+      <div class="gadget-grid" id="gadget-grid">
+        <div class="gadget-card" data-tags="surface, tablet">
+          <img src="https://via.placeholder.com/280x180" alt="Surface" loading="lazy">
+          <div class="gadget-content">
+            <h3>Surfaceレビュー</h3>
+            <p>メルカリで購入した3万円のSurfaceを徹底レビュー。</p>
+            <a href="https://gadgetter45.blogspot.com" class="cta">詳細</a>
           </div>
         </div>
-        <div class="portfolio-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-          <img src="https://guide-images.cdn.ifixit.com/igi/sX5iMoIvYMbCvHoF.medium" alt="iPhone脱獄" loading="lazy">
-          <div class="portfolio-content">
+        <div class="gadget-card" data-tags="iphone, jailbreak">
+          <img src="https://guide-images.cdn.ifixit.com/igi/sX5iMoIvYMbCvHoF.medium" alt="iPhone 5s" loading="lazy">
+          <div class="gadget-content">
             <h3>iPhone 5s脱獄ガイド</h3>
-            <p>iOS 12での脱獄手順をステップごとに解説。安全性とカスタマイズを両立！</p>
-            <a href="https://gadgetter45.blogspot.com/2025/05/koke-blog-test.html" class="read-more">詳細を見る</a>
-          </div>
-        </div>
-        <div class="portfolio-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-          <img src="https://everymac.com/images/other_images/iphone-4-5-big.jpg" alt="いおおおいお" loading="lazy">
-          <div class="portfolio-content">
-            <h3>IPhone各種レビュー</h3>
-            <p>10年前のIPhoneは2025年に使えるのか！</p>
-            <a href="https://gadgetter45.blogspot.com/2025/05/koke-blog-test.html" class="read-more">詳細を見る</a>
+            <p>iOS 12での脱獄手順をステップごとに解説。</p>
+            <a href="https://gadgetter45.blogspot.com" class="cta">詳細</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Blog -->
-    <section id="blog" role="region" aria-labelledby="blog-heading">
-      
-      
-      
+    <!-- Links & Spotify -->
+    <section id="links" role="region" aria-labelledby="links-heading">
+      <h2 id="links-heading">リンク</h2>
+      <div class="links-grid">
+        <div class="link-card">
+          <a href="https://x.com/gadgetter45" target="_blank" rel="noopener">Twitter</a>
+          <p>最新情報やつぶやきをチェック！</p>
+        </div>
+        <div class="link-card">
+          <a href="https://www.youtube.com/@Koke_Gadget" target="_blank" rel="noopener">YouTube</a>
+          <p>ガジェットレビュー動画</p>
+        </div>
+        <div class="link-card">
+          <a href="https://gadgetter45.blogspot.com" target="_blank" rel="noopener">ブログ</a>
+          <p>詳細なレビュー記事</p>
+        </div>
+      </div>
+      <div class="spotify-widget">
+        <h3>作業用BGM</h3>
+        <iframe style="border-radius:8px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact" role="region" aria-labelledby="contact-heading">
-      
-      
+    <!-- News -->
+    <section id="news" role="region" aria-labelledby="news-heading">
+      <h2 id="news-heading">最新ニュース</h2>
+      <div class="news-grid" id="news-grid"></div>
     </section>
   </div>
 
   <!-- Footer -->
   <footer role="contentinfo">
-    <div class="newsletter">
-      <h3>このサイトはβ版です</h3>
-      
-    </div>
     <div class="social">
-      <a href="https://twitter.com/gadgetter45" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-      
-      
+      <a href="https://x.com/gadgetter45" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
       <a href="https://www.youtube.com/@Koke_Gadget" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
     </div>
     <p>© 2025 koke. All Rights Reserved.</p>
   </footer>
 
-  <!-- Back to Top -->
-  <a href="#" class="back-to-top" aria-label="ページのトップに戻る"><i class="fas fa-chevron-up"></i></a>
-
   <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer=""></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer=""></script>
-  <script type="module">
-    // Import Firebase modules
-    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
-    import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js';
-
-    // Firebase Configuration (Replace with your Firebase project config)
-    const firebaseConfig = {
-      apiKey: "YOUR_API_KEY",
-      authDomain: "YOUR_AUTH_DOMAIN",
-      projectId: "YOUR_PROJECT_ID",
-      storageBucket: "YOUR_STORAGE_BUCKET",
-      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-      appId: "YOUR_APP_ID"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-
-    // Particle.js
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 100, density: { enable: true, value_area: 800 } },
-        color: { value: ["#22d3ee", "#7c3aed", "#ffffff"] },
-        shape: { type: ["circle", "triangle", "star"] },
-        opacity: { value: 0.6, random: true },
-        size: { value: 4, random: true },
-        line_linked: { enable: true, distance: 120, color: "#ffffff", opacity: 0.3, width: 1 },
-        move: { enable: true, speed: 3, direction: "none", random: true }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: { onhover: { enable: true, mode: "bubble" }, onclick: { enable: true, mode: "push" } },
-        modes: { bubble: { distance: 200, size: 6, duration: 2 }, push: { particles_nb: 5 } }
-      },
-      retina_detect: true
-    });
-
-    // AOS
-    AOS.init({ duration: 1200, once: true });
-
-    // Custom Cursor
-    const cursor = document.querySelector(".cursor");
-    document.addEventListener("mousemove", (e) => {
-      cursor.style.left = e.clientX + "px";
-      cursor.style.top = e.clientY + "px";
-    });
-
-    document.querySelectorAll("a, button, .card, .portfolio-item").forEach(el => {
-      el.addEventListener("mouseenter", () => cursor.classList.add("hovered"));
-      el.addEventListener("mouseleave", () => cursor.classList.remove("hovered"));
-    });
-
+  <script>
     // Navigation Toggle
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
@@ -820,139 +455,51 @@
       navLinks.classList.toggle("active");
     });
 
-    // Dark Mode Toggle
+    // Theme Toggle
     const themeToggle = document.querySelector(".theme-toggle");
-    const body = document.body;
     themeToggle.addEventListener("click", () => {
-      body.dataset.theme = body.dataset.theme === "light" ? "dark" : "light";
-      themeToggle.innerHTML = body.dataset.theme === "light" ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
-      localStorage.setItem("theme", body.dataset.theme);
+      document.body.dataset.theme = document.body.dataset.theme === "light" ? "dark" : "light";
+      themeToggle.innerHTML = document.body.dataset.theme === "light" ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+      localStorage.setItem("theme", document.body.dataset.theme);
     });
 
     if (localStorage.getItem("theme") === "dark") {
-      body.dataset.theme = "dark";
+      document.body.dataset.theme = "dark";
       themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
     }
 
-    // Language Toggle
-    const languageToggle = document.querySelector(".language-toggle");
-    const translations = {
-      ja: {
-        hero: "群馬のガジェッター & YouTuber",
-        about: "自己紹介",
-        portfolio: "ポートフォリオ",
-        blog: "最新のブログ",
-        contact: "お問い合わせ",
-        cta: "YouTubeをチェック",
-        newsletter: "ニュースレターに登録"
-      },
-      en: {
-        hero: "Gunma's Gadgeteer & YouTuber",
-        about: "About Me",
-        portfolio: "Portfolio",
-        blog: "Latest Blog",
-        contact: "Contact",
-        cta: "Check YouTube",
-        newsletter: "Subscribe to Newsletter"
-      }
-    };
-
-    languageToggle.addEventListener("click", () => {
-      body.dataset.lang = body.dataset.lang === "ja" ? "en" : "ja";
-      const lang = body.dataset.lang;
-      document.querySelector("header p").textContent = translations[lang].hero;
-      document.querySelector("#about-heading").textContent = translations[lang].about;
-      document.querySelector("#portfolio-heading").textContent = translations[lang].portfolio;
-      document.querySelector("#blog-heading").textContent = translations[lang].blog;
-      document.querySelector("#contact-heading").textContent = translations[lang].contact;
-      document.querySelector("header .cta").textContent = translations[lang].cta;
-      document.querySelector("footer .newsletter h3").textContent = translations[lang].newsletter;
-      localStorage.setItem("lang", lang);
-    });
-
-    if (localStorage.getItem("lang") === "en") {
-      body.dataset.lang = "en";
-      languageToggle.click();
-    }
-
-    // Skill Bar Animation
-    const skillBars = document.querySelectorAll(".skill-bar");
-    const animateBars = () => {
-      skillBars.forEach(bar => {
-        const rect = bar.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom >= 0) {
-          bar.style.width = bar.parentElement.dataset.width;
-        }
-      });
-    };
-
-    window.addEventListener("scroll", animateBars);
-    animateBars();
-
-    // Back to Top
-    const backToTop = document.querySelector(".back-to-top");
-    window.addEventListener("scroll", () => {
-      backToTop.classList.toggle("visible", window.scrollY > 300);
-    });
-
-    // Blog Search
-    function searchBlogs() {
-      const input = document.getElementById("blog-search-input").value.toLowerCase();
-      const cards = document.querySelectorAll(".blog-cards .card");
+    // Gadget Search
+    function searchGadgets() {
+      const input = document.getElementById("gadget-search-input").value.toLowerCase();
+      const cards = document.querySelectorAll(".gadget-card");
       cards.forEach(card => {
         const title = card.querySelector("h3").textContent.toLowerCase();
         const tags = card.dataset.tags.toLowerCase();
-        card.style.display = (title.includes(input) || tags.includes(input)) ? "block" : "none";
+        card.style.display = title.includes(input) || tags.includes(input) ? "block" : "none";
       });
     }
 
-    // Contact Form
-    const contactForm = document.getElementById("contact-form");
-    const contactSubmit = document.getElementById("contact-submit");
-    contactForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      contactSubmit.disabled = true;
-      contactSubmit.textContent = "送信中...";
-
-      const formData = new FormData(contactForm);
-      const data = Object.fromEntries(formData);
-
+    // News Fetch
+    async function fetchNews() {
+      const newsGrid = document.getElementById("news-grid");
       try {
-        await addDoc(collection(db, "contacts"), {
-          name: data.name,
-          email: data.email,
-          message: data.message,
-          timestamp: serverTimestamp()
+        const response = await fetch("https://newsapi.org/v2/top-headlines?category=technology&apiKey=YOUR_NEWS_API_KEY");
+        const data = await response.json();
+        data.articles.slice(0, 3).forEach(article => {
+          const card = document.createElement("div");
+          card.className = "news-card";
+          card.innerHTML = `
+            <h3><a href="${article.url}" target="_blank" rel="noopener">${article.title}</a></h3>
+            <p>${article.description || "詳細はリンク先で"}</p>
+          `;
+          newsGrid.appendChild(card);
         });
-        contactForm.reset();
-        alert("メッセージが送信されました！");
-      } catch (error) {
-        console.error("Contact form error:", error);
-        alert("エラーが発生しました。もう一度お試しください。");
-      } finally {
-        contactSubmit.disabled = false;
-        contactSubmit.textContent = "送信";
+      } catch {
+        newsGrid.innerHTML = "<p>ニュースの取得に失敗しました。</p>";
       }
-    });
+    }
 
-    // Newsletter Form
-    const newsletterForm = document.getElementById("newsletter-form");
-    newsletterForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const email = newsletterForm.querySelector("input[name='email']").value;
-
-      try {
-        await addDoc(collection(db, "subscribers"), {
-          email: email,
-          timestamp: serverTimestamp()
-        });
-        newsletterForm.reset();
-        alert("ニュースレターに登録しました！");
-      } catch (error) {
-        console.error("Newsletter form error:", error);
-        alert("エラーが発生しました。もう一度お試しください。");
-      }
-    });
+    fetchNews();
   </script>
-
-</body></html>
+</body>
+</html>
