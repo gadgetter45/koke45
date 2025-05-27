@@ -3,33 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="群馬のガジェッターkokeの公式サイト。iPhone脱獄、Androidカスタマイズ、最新ガジェットレビューを配信！">
+  <meta name="description" content="群馬在住のガジェッターkokeの公式サイト。iPhone脱獄、Androidカスタマイズ、最新ガジェットレビューを配信。">
   <meta name="keywords" content="ガジェット, iPhone, Android, 脱獄, koke, 群馬, YouTuber, テックレビュー">
   <meta name="author" content="koke">
-  <meta property="og:title" content="koke | ガジェッター">
-  <meta property="og:description" content="最新ガジェットレビューをYouTubeとブログで！">
+  <meta property="og:title" content="koke | 群馬のガジェッター">
+  <meta property="og:description" content="群馬在住のガジェッターkokeの公式サイト。最新ガジェットレビューをチェック！">
   <meta property="og:image" content="https://pbs.twimg.com/profile_images/1905204578142060544/Uy9o3amd_400x400.jpg">
   <meta property="og:url" content="https://koke-gadgetter.com">
   <meta name="twitter:card" content="summary_large_image">
-  <title>koke | ガジェッター</title>
+  <title>koke | 群馬のガジェッター</title>
   <link rel="icon" href="https://via.placeholder.com/32" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     :root {
-      --bg: #fafafa;
-      --text: #1f2937;
-      --primary: #2563eb;
-      --accent: #14b8a6;
-      --card-bg: #ffffff;
-      --border: #e5e7eb;
+      --primary: #1e40af;
+      --accent: #06b6d4;
+      --bg: #ffffff;
+      --text: #111827;
+      --card-bg: #f9fafb;
+      --gradient: linear-gradient(135deg, #1e40af, #7c3aed);
     }
 
     [data-theme="dark"] {
-      --bg: #1f2937;
-      --text: #f3f4f6;
-      --card-bg: #374151;
-      --border: #4b5563;
+      --bg: #111827;
+      --text: #f9fafb;
+      --card-bg: #1f2937;
     }
 
     * {
@@ -40,31 +39,32 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', 'Noto Sans JP', sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
-      transition: background 0.2s, color 0.2s;
+      line-height: 1.5;
+      transition: background 0.3s, color 0.3s;
     }
 
     a {
       color: var(--accent);
       text-decoration: none;
-      transition: color 0.2s;
+      transition: color 0.3s;
     }
 
     /* Navigation */
     nav {
-      background: var(--card-bg);
-      padding: 1rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       position: sticky;
       top: 0;
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem;
       z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .nav-container {
-      max-width: 1280px;
+      max-width: 1200px;
       margin: auto;
       display: flex;
       justify-content: space-between;
@@ -74,7 +74,6 @@
     .nav-logo {
       font-size: 1.5rem;
       font-weight: 700;
-      color: var(--primary);
     }
 
     .nav-links {
@@ -83,9 +82,10 @@
     }
 
     .nav-links a {
+      color: #fff;
       font-size: 1rem;
-      font-weight: 600;
-      color: var(--text);
+      padding: 0.5rem;
+      transition: color 0.3s;
     }
 
     .nav-links a:hover {
@@ -97,7 +97,7 @@
       font-size: 1.5rem;
       background: none;
       border: none;
-      color: var(--text);
+      color: #fff;
       cursor: pointer;
     }
 
@@ -109,9 +109,8 @@
         top: 60px;
         left: 0;
         width: 100%;
-        background: var(--card-bg);
+        background: var(--primary);
         padding: 1rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       }
 
       .nav-links.active {
@@ -125,22 +124,27 @@
 
     /* Header */
     header {
-      background: var(--primary);
+      height: 80vh;
+      background: var(--gradient);
       color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 4rem 1rem;
+      position: relative;
+      overflow: hidden;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       font-weight: 700;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     header p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       opacity: 0.9;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     .cta {
@@ -148,156 +152,211 @@
       padding: 0.8rem 2rem;
       background: var(--accent);
       color: #fff;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: background 0.2s, transform 0.2s;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: left 0.3s;
+    }
+
+    .cta:hover::before {
+      left: 0;
     }
 
     .cta:hover {
-      background: #0d9488;
-      transform: translateY(-2px);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Access Counter */
+    .access-counter {
+      text-align: center;
+      padding: 1rem;
+      background: var(--card-bg);
+      margin: 2rem auto;
+      max-width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .access-counter p {
+      font-size: 1.2rem;
+      font-weight: 700;
     }
 
     /* Container */
     .container {
-      max-width: 1280px;
+      max-width: 1200px;
       margin: auto;
-      padding: 2rem 1rem;
+      padding: 4rem 1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 700;
-      margin-bottom: 1rem;
-      color: var(--primary);
+      margin-bottom: 2rem;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
     }
 
     /* About */
     .about {
-      background: var(--card-bg);
-      padding: 1.5rem;
-      border-radius: 8px;
       display: flex;
-      gap: 1.5rem;
-      align-items: center;
+      gap: 2rem;
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .about img {
-      width: 120px;
-      height: 120px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
     }
 
-    .about p {
-      font-size: 1rem;
-    }
-
-    /* Gadget Search */
-    .gadget-search {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-      max-width: 400px;
-    }
-
-    .gadget-search input {
+    .about-content {
       flex: 1;
-      padding: 0.8rem;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      font-size: 1rem;
     }
 
-    .gadget-search button {
-      padding: 0.8rem 1.5rem;
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    .gadget-search button:hover {
-      background: #0d9488;
-    }
-
-    /* Gadget Grid */
-    .gadget-grid {
+    /* Portfolio */
+    .portfolio-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
     }
 
-    .gadget-card {
+    .portfolio-item {
       background: var(--card-bg);
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
-      transition: transform 0.2s;
+      transition: transform 0.3s;
     }
 
-    .gadget-card:hover {
-      transform: translateY(-4px);
+    .portfolio-item:hover {
+      transform: translateY(-5px);
     }
 
-    .gadget-card img {
+    .portfolio-item img {
       width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
     }
 
-    .gadget-content {
-      padding: 1rem;
+    .portfolio-content {
+      padding: 1.5rem;
     }
 
-    .gadget-content h3 {
-      font-size: 1.3rem;
-      font-weight: 600;
+    .portfolio-content h3 {
+      font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }
 
     /* Links */
-    .links-grid {
+    .links-grid, .mutual-links-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
     }
 
-    .link-card {
+    .link-item, .mutual-link-item {
       background: var(--card-bg);
       padding: 1rem;
       border-radius: 8px;
       text-align: center;
+      transition: transform 0.3s;
     }
 
-    .link-card a {
-      font-size: 1.1rem;
-      font-weight: 600;
+    .link-item:hover, .mutual-link-item:hover {
+      transform: translateY(-3px);
+    }
+
+    .link-item a, .mutual-link-item a {
+      font-size: 1.2rem;
+      font-weight: 700;
       color: var(--primary);
     }
 
-    /* Spotify */
-    .spotify-widget {
-      max-width: 400px;
-      margin: 1.5rem auto;
+    .link-item p, .mutual-link-item p {
+      color: #6b7280;
+      font-size: 0.9rem;
     }
 
-    /* News */
+    /* Twitter Feed */
+    .twitter-feed {
+      max-width: 500px;
+      margin: 2rem auto;
+    }
+
+    .twitter-feed h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tweet {
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    /* Spotify Widget */
+    .spotify-widget {
+      max-width: 500px;
+      margin: 2rem auto;
+    }
+
+    /* News Section */
     .news-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
     }
 
-    .news-card {
+    .news-item {
       background: var(--card-bg);
       padding: 1rem;
       border-radius: 8px;
     }
 
-    .news-card h3 {
+    .news-item h3 {
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer .social a {
+      margin: 0 1rem;
+      font-size: 1.5rem;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    footer .social a:hover {
+      color: var(--accent);
     }
 
     /* Theme Toggle */
@@ -307,7 +366,7 @@
       right: 1rem;
       background: none;
       border: none;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: var(--text);
       cursor: pointer;
     }
@@ -315,7 +374,7 @@
     /* Responsive */
     @media (max-width: 768px) {
       header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
 
       header p {
@@ -331,18 +390,11 @@
         margin: auto;
       }
     }
-
-    @media (max-width: 480px) {
-      .cta {
-        padding: 0.6rem 1.5rem;
-        font-size: 0.9rem;
-      }
-    }
   </style>
 </head>
 <body data-theme="light">
   <!-- Theme Toggle -->
-  <button class="theme-toggle" aria-label="テーマ切り替え">
+  <button class="theme-toggle" aria-label="テーマを切り替え">
     <i class="fas fa-moon"></i>
   </button>
 
@@ -356,18 +408,27 @@
       <div class="nav-links">
         <a href="#home">ホーム</a>
         <a href="#about">自己紹介</a>
-        <a href="#gadgets">ガジェット</a>
-        <a href="#links">リンク</a>
+        <a href="#portfolio">ポートフォリオ</a>
+        <a href="#links">リンク集</a>
+        <a href="#mutual-links">相互リンク</a>
       </div>
     </div>
   </nav>
 
   <!-- Header -->
   <header id="home" role="banner">
-    <h1>koke</h1>
-    <p>群馬のガジェッター | ガジェットレビューとカスタマイズ</p>
-    <a href="https://x.com/gadgetter45" class="cta">Twitterでフォロー</a>
+    <div class="hero-content">
+      <h1>koke</h1>
+      <p>群馬のガジェッター</p>
+      <a href="https://x.com/gadgetter45" class="cta">Twitterでフォロー</a>
+      <a href="https://www.youtube.com/@Koke_Gadget" class="cta">YouTube</a>
+    </div>
   </header>
+
+  <!-- Access Counter -->
+  <div class="access-counter">
+    <p>訪問者数: <span id="visitor-count">0</span></p>
+  </div>
 
   <!-- Main Content -->
   <div class="container">
@@ -376,63 +437,84 @@
       <h2 id="about-heading">自己紹介</h2>
       <div class="about">
         <img src="https://pbs.twimg.com/profile_images/1905204578142060544/Uy9o3amd_400x400.jpg" alt="kokeのプロフィール写真" loading="lazy">
-        <p>群馬在住のkokeです。iPhone脱獄、Androidカスタマイズ、最新ガジェットのレビューをYouTubeとブログで発信しています！</p>
+        <div class="about-content">
+          <p>群馬在住のガジェッター、kokeです。iPhone脱獄、Androidカスタマイズ、最新ガジェットレビューをYouTubeとブログで発信中！</p>
+        </div>
       </div>
     </section>
 
-    <!-- Gadgets -->
-    <section id="gadgets" role="region" aria-labelledby="gadgets-heading">
-      <h2 id="gadgets-heading">ガジェットレビュー</h2>
-      <div class="gadget-search">
-        <input type="text" id="gadget-search-input" placeholder="ガジェットを検索..." aria-label="ガジェット検索">
-        <button onclick="searchGadgets()">検索</button>
-      </div>
-      <div class="gadget-grid" id="gadget-grid">
-        <div class="gadget-card" data-tags="surface, tablet">
-          <img src="https://via.placeholder.com/280x180" alt="Surface" loading="lazy">
-          <div class="gadget-content">
-            <h3>Surfaceレビュー</h3>
-            <p>メルカリで購入した3万円のSurfaceを徹底レビュー。</p>
-            <a href="https://gadgetter45.blogspot.com" class="cta">詳細</a>
+    <!-- Portfolio -->
+    <section id="portfolio" role="region" aria-labelledby="portfolio-heading">
+      <h2 id="portfolio-heading">ポートフォリオ</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="https://via.placeholder.com/300x200" alt="Surfaceレビュー" loading="lazy">
+          <div class="portfolio-content">
+            <h3>Surface 着弾‼</h3>
+            <p>メルカリで購入した3万円のSurfaceをレビュー。</p>
+            <a href="https://gadgetter45.blogspot.com/2025/05/koke-blog-test.html" class="cta">詳細</a>
           </div>
         </div>
-        <div class="gadget-card" data-tags="iphone, jailbreak">
-          <img src="https://guide-images.cdn.ifixit.com/igi/sX5iMoIvYMbCvHoF.medium" alt="iPhone 5s" loading="lazy">
-          <div class="gadget-content">
+        <div class="portfolio-item">
+          <img src="https://guide-images.cdn.ifixit.com/igi/sX5iMoIvYMbCvHoF.medium" alt="iPhone脱獄" loading="lazy">
+          <div class="portfolio-content">
             <h3>iPhone 5s脱獄ガイド</h3>
-            <p>iOS 12での脱獄手順をステップごとに解説。</p>
-            <a href="https://gadgetter45.blogspot.com" class="cta">詳細</a>
+            <p>iOS 12での脱獄手順を解説。</p>
+            <a href="https://gadgetter45.blogspot.com/2025/05/koke-blog-test.html" class="cta">詳細</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Links & Spotify -->
+    <!-- Links -->
     <section id="links" role="region" aria-labelledby="links-heading">
-      <h2 id="links-heading">リンク</h2>
+      <h2 id="links-heading">リンク集</h2>
       <div class="links-grid">
-        <div class="link-card">
+        <div class="link-item">
           <a href="https://x.com/gadgetter45" target="_blank" rel="noopener">Twitter</a>
-          <p>最新情報やつぶやきをチェック！</p>
+          <p>最新ガジェット情報やつぶやきをチェック。</p>
         </div>
-        <div class="link-card">
+        <div class="link-item">
           <a href="https://www.youtube.com/@Koke_Gadget" target="_blank" rel="noopener">YouTube</a>
-          <p>ガジェットレビュー動画</p>
+          <p>ガジェットレビュー動画を配信。</p>
         </div>
-        <div class="link-card">
+        <div class="link-item">
           <a href="https://gadgetter45.blogspot.com" target="_blank" rel="noopener">ブログ</a>
-          <p>詳細なレビュー記事</p>
+          <p>詳細なガジェットレビュー記事。</p>
         </div>
       </div>
+      <!-- Spotify Widget -->
       <div class="spotify-widget">
-        <h3>作業用BGM</h3>
+        <h3>おすすめプレイリスト</h3>
         <iframe style="border-radius:8px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
     </section>
 
+    <!-- Mutual Links -->
+    <section id="mutual-links" role="region" aria-labelledby="mutual-links-heading">
+      <h2 id="mutual-links-heading">相互リンク</h2>
+      <div class="mutual-links-grid">
+        <div class="mutual-link-item">
+          <a href="https://example.com/techblog" target="_blank" rel="noopener">Tech Blog</a>
+          <p>最新のテックニュースとレビュー。</p>
+        </div>
+        <div class="mutual-link-item">
+          <a href="https://example.com/gadgetworld" target="_blank" rel="noopener">Gadget World</a>
+          <p>ガジェット愛好者のための情報サイト。</p>
+        </div>
+        <!-- Add more mutual links here as needed -->
+      </div>
+    </section>
+
+    <!-- Twitter Feed -->
+    <section id="twitter" role="region" aria-labelledby="twitter-heading">
+      <h2 id="twitter-heading">最新ツイート</h2>
+      <div class="twitter-feed" id="twitter-feed"></div>
+    </section>
+
     <!-- News -->
     <section id="news" role="region" aria-labelledby="news-heading">
-      <h2 id="news-heading">最新ニュース</h2>
+      <h2 id="news-heading">ガジェットニュース</h2>
       <div class="news-grid" id="news-grid"></div>
     </section>
   </div>
@@ -447,6 +529,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://platform.twitter.com/widgets.js" defer></script>
   <script>
     // Navigation Toggle
     const hamburger = document.querySelector(".hamburger");
@@ -457,44 +540,56 @@
 
     // Theme Toggle
     const themeToggle = document.querySelector(".theme-toggle");
+    const body = document.body;
     themeToggle.addEventListener("click", () => {
-      document.body.dataset.theme = document.body.dataset.theme === "light" ? "dark" : "light";
-      themeToggle.innerHTML = document.body.dataset.theme === "light" ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
-      localStorage.setItem("theme", document.body.dataset.theme);
+      body.dataset.theme = body.dataset.theme === "light" ? "dark" : "light";
+      themeToggle.innerHTML = body.dataset.theme === "light" ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+      localStorage.setItem("theme", body.dataset.theme);
     });
 
     if (localStorage.getItem("theme") === "dark") {
-      document.body.dataset.theme = "dark";
+      body.dataset.theme = "dark";
       themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
     }
 
-    // Gadget Search
-    function searchGadgets() {
-      const input = document.getElementById("gadget-search-input").value.toLowerCase();
-      const cards = document.querySelectorAll(".gadget-card");
-      cards.forEach(card => {
-        const title = card.querySelector("h3").textContent.toLowerCase();
-        const tags = card.dataset.tags.toLowerCase();
-        card.style.display = title.includes(input) || tags.includes(input) ? "block" : "none";
-      });
-    }
+    // Access Counter
+    const visitorCount = document.getElementById("visitor-count");
+    let count = parseInt(localStorage.getItem("visitorCount")) || 0;
+    count++;
+    localStorage.setItem("visitorCount", count);
+    visitorCount.textContent = count;
 
-    // News Fetch
+    // Twitter Feed (Simulated)
+    const twitterFeed = document.getElementById("twitter-feed");
+    const tweets = [
+      { text: "最新のiPhoneレビューをアップしました！ #ガジェット", date: "2025-05-25" },
+      { text: "Surfaceが3万円で手に入るなんて！詳細はブログで。", date: "2025-05-24" }
+    ];
+    tweets.forEach(tweet => {
+      const tweetEl = document.createElement("div");
+      tweetEl.className = "tweet";
+      tweetEl.innerHTML = `<p>${tweet.text}</p><small>${tweet.date}</small>`;
+      twitterFeed.appendChild(tweetEl);
+    });
+
+    // News API Fetch
     async function fetchNews() {
       const newsGrid = document.getElementById("news-grid");
       try {
+        // NewsAPI.orgのサンプルエンドポイント（要APIキー）
         const response = await fetch("https://newsapi.org/v2/top-headlines?category=technology&apiKey=YOUR_NEWS_API_KEY");
         const data = await response.json();
         data.articles.slice(0, 3).forEach(article => {
-          const card = document.createElement("div");
-          card.className = "news-card";
-          card.innerHTML = `
+          const newsItem = document.createElement("div");
+          newsItem.className = "news-item";
+          newsItem.innerHTML = `
             <h3><a href="${article.url}" target="_blank" rel="noopener">${article.title}</a></h3>
-            <p>${article.description || "詳細はリンク先で"}</p>
+            <p>${article.description || "詳細はリンク先で確認してください。"}</p>
           `;
-          newsGrid.appendChild(card);
+          newsGrid.appendChild(newsItem);
         });
-      } catch {
+      } catch (error) {
+        console.error("News fetch error:", error);
         newsGrid.innerHTML = "<p>ニュースの取得に失敗しました。</p>";
       }
     }
